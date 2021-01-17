@@ -1,0 +1,99 @@
+ .container{
+    padding: 16px;
+
+
+} 
+html, body{
+    background-color: rgba(162, 157, 235, 0.932);
+}
+button{
+    font-size: 1.2rem;
+    background-color:rgb(44, 216, 101);
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+#open_btn{
+    background-color: cyan;
+}
+
+button:disabled{
+    background-color:rgb(216, 99, 44); 
+    color:white;
+}
+.form-class input{
+    width: 100%; 
+    background-color: rgb(172, 216, 255);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="text"], input[type="number"]{
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(71, 73, 216, 0.425);
+  
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.results{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.errorMessage{
+    font-weight: bold;
+}
+
+.flip{
+    margin-top: 20px;
+}
+.panel, .flip {
+   
+    padding: 5px;
+    text-align: center;
+    background-color: #63c9f8;
+    border: solid 1px #bb9595;
+}
+
+.panel  {
+    
+    padding: 50px;
+    display: none;
+  
+
+}
+
+.textDisplay{
+    display: flex;
+    
+}
+.textTitle{
+    font-weight: bold;
+  
+}
+
+
+.userDisplay {
+    font-size: 40px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
