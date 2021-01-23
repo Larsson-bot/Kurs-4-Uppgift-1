@@ -74,21 +74,21 @@ export function checkLengthName(id , min = 2){
             if(re.test(e.target.value))
             {
                 document.getElementById('errorEmail').innerText = ''
-            document.getElementById('emailResults').innerText = 'Email Accepted'
-            emailval = true
-            checkAllValidation()
-            return true
+                document.getElementById('emailResults').innerText = 'Email Accepted'
+                emailval = true
+                checkAllValidation()
             }
-            else{
+            else
+            {
                 document.getElementById('errorEmail').innerText = 'EmailFormat = abc@abc.abc'
                 document.getElementById('emailResults').innerText = 'Invalid Email Adress'
                 emailval = false
                 checkAllValidation()
-                return false 
             }
             
         })  
     }   
+
 export function clearEmail(){
     document.getElementById('emailResults').innerText = ''
 }
@@ -99,6 +99,7 @@ export function clearInputs(){
     for (let i = 0; i < inputs.length; i += 1) {
         inputs[i].value = '';
     }
+    resetInputData()
 }
 
 export function containOnlyNumbersForZipcode(id, min = 5){
@@ -119,7 +120,6 @@ export function containOnlyNumbersForZipcode(id, min = 5){
 }
 
 export function containOnlyNumbersForPhonenumber(id , min = 9, max = 10){
-
     document.getElementById(id).addEventListener('keyup', (e) => {
         e.preventDefault()
             if(e.target.value.length < min ) {
@@ -182,4 +182,15 @@ export function checkAllValidation(){
         else {
             document.getElementById('register_btn').disabled = true
         }
+    }
+
+
+function resetInputData(){
+        firstnameval = false;
+        lastnameval = false;
+        emailval = false;
+        phoneval = false;
+        adresslineval = false;
+        zipcodeval = false;
+        cityval = false;
     }

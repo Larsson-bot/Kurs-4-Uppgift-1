@@ -1,6 +1,6 @@
 
 export default class User{
-    constructor(firstname,lastname,emailadress,phone,adressline,zipcode,city,id){
+    constructor(firstname,lastname,emailadress,phone,adressline,zipcode,city){
         this.firstname = firstname
         this.lastname = lastname
         this.emailadress = emailadress
