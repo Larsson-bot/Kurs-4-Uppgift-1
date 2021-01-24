@@ -81,7 +81,7 @@ export function checkLengthName(id , min = 2){
             else
             {
                 document.getElementById('errorEmail').innerText = 'EmailFormat = abc@abc.abc'
-                document.getElementById('emailResults').innerText = 'Invalid Email Adress'
+                document.getElementById('emailResults').innerText = 'Invalid Emailadress'
                 emailval = false
                 checkAllValidation()
             }
@@ -112,7 +112,7 @@ export function containOnlyNumbersForZipcode(id, min = 5){
             checkAllValidation()
         }
         else {
-            document.getElementById(id +'Results').innerText = 'Please enter a ' + min + ' digit ' + e.target.id
+            document.getElementById(id +'Results').innerText = 'Please enter a ' + min + ' digit ' + e.target.id.capitalize()
             zipcodeval = false
             checkAllValidation() 
         }
@@ -123,12 +123,12 @@ export function containOnlyNumbersForPhonenumber(id , min = 9, max = 10){
     document.getElementById(id).addEventListener('keyup', (e) => {
         e.preventDefault()
             if(e.target.value.length < min ) {
-            document.getElementById(id +'Results').innerText = 'Please enter a phonenumber between ' + min + ' and ' + max + ' digits!'
+            document.getElementById(id +'Results').innerText = 'Please enter a Phonenumber between ' + min + ' and ' + max + ' digits!'
             phoneval = false
             checkAllValidation()
         }
         else if(e.target.value.length > max){
-            document.getElementById(id +'Results').innerText = 'Please enter a phonenumber between ' + min + ' and ' + max + ' digits!'
+            document.getElementById(id +'Results').innerText = 'Please enter a Phonenumber between ' + min + ' and ' + max + ' digits!'
             phoneval = false
             checkAllValidation()
         }

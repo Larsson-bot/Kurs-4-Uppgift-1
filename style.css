@@ -4,7 +4,12 @@
 
 } 
 html, body{
-    background-color: rgba(162, 157, 235, 0.932);
+    background-color: rgba(162, 157, 235, 0.856);
+}
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
 }
 button{
     font-size: 1.2rem;
@@ -14,9 +19,6 @@ button{
     width: 200px;
 }
 
-#open_btn{
-    background-color: cyan;
-}
 
 button:disabled{
     background-color:rgb(216, 99, 44); 
@@ -45,7 +47,7 @@ input[type="text"], input[type="number"]{
 
 input[type="text"]:focus, input[type="number"]:focus{
     outline: none;
-    box-shadow: 0 0 0 5px rgba(71, 73, 216, 0.425);
+    box-shadow: 0 0 0 5px rgba(71, 73, 216, 0.507);
   
 }
 
