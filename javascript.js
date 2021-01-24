@@ -55,33 +55,33 @@ document.getElementById('register_btn').addEventListener('click', (e) =>{
     e.preventDefault()
         let userdata = new User(`${firstname.value.capitalize()}`,`${lastname.value.capitalize()}`,`${emailadress.value}`.toLowerCase(),`${phone.value}`,`${adressline.value.capitalize()}`,`${zipcode.value}`,`${city.value.capitalize()}`)
         users.push(userdata)
-            document.querySelector('#validatedUsers').innerHTML += `    <div class="flip" id="flip_${userdata.id}" >${userdata.firstname}` + ' ' + `${userdata.lastname}</div>
+            document.querySelector('#validatedUsers').innerHTML += `    <div class="flip textTitle" id="flip_${userdata.id}" >${userdata.firstname}` + ' ' + `${userdata.lastname}</div>
             <div class="panel" id="panel_${userdata.id}">
                 <div class="d-flex justify-content-between">
                     <ul id="personalInfo">
                         <li class="textDisplay" >
                             <div class="textTitle" >Id:</div>
-                            <div class="ml-5" id="uniqueId">${userdata.id}</div>
+                            <div class="ml-5" >${userdata.id}</div>
                         </li>
                         <li class="textDisplay" >
                             <div class="textTitle" >E-post:</div>
-                            <div class="ml-3" id="email">${userdata.emailadress}</div>
+                            <div class="ml-3" >${userdata.emailadress}</div>
                         </li>
                         <li class="textDisplay" >
                             <div class="textTitle" >Telefon:</div>
-                            <div class="ml-2" id="phoneNumber">${userdata.phone}</div>
+                            <div class="ml-2" >${userdata.phone}</div>
                         </li> 
                     </ul>
                     <div id="adressInfo ">
                         <div>
-                            <div class="textTitle"  id="adressLine">${userdata.adressline}</div>
+                            <div >${userdata.adressline}</div>
                         </div>
                     <div class="d-flex justify-content-between">
-                        <div >
-                            <div class="textTitle" id="zipCode">${userdata.zipcode}</div>
+                        <div>
+                            <div >${userdata.zipcode}</div>
                         </div>
                         <div >
-                            <div class="textTitle ml-4" id="cityPanel">${userdata.city}</div>
+                            <div class="ml-4" >${userdata.city}</div>
                         </div>                     
                     </div>
                 </div>      
