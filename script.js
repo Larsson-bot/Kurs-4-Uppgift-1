@@ -1,4 +1,4 @@
-$("body").delegate(".flip", "click", function(){
+  $("body").delegate(".flip", "click", function(){
 	$('.panel').not($(this).next(".panel").slideToggle("slow")).slideUp("slow");
   });
     
@@ -6,7 +6,7 @@ $("body").delegate(".flip", "click", function(){
   
 $(document).on('click', ".delete", function(){
   var entry = $(this).parent();        
-  entry.remove();  //remove entry from list
+  entry.remove();  
 });
-
+//Tar bara bort paneldelen av objektet.
      

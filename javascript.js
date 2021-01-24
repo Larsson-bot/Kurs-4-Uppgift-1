@@ -11,7 +11,6 @@ checkAllValidation()
 
 document.getElementById('emailadress').addEventListener('keyup',() =>{   
     let email = `${emailadress.value}`.toLowerCase()
-    //let userinfo = users.find(user => user.emailadress === email)
     let userinfo =  users.find(user => user.emailadress === email)
     if(userinfo == null){
         return true
@@ -23,7 +22,7 @@ document.getElementById('emailadress').addEventListener('keyup',() =>{
     }
 })
 
-//Funktion som ser till så att varje användare har en unik mejladress. 
+//Funktion som ser till så att varje användare har en unik mejladress. Alla emails omvandlas till lowercase nu för att förhindra återupprepande värden. 
 
 
 
