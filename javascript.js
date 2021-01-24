@@ -10,8 +10,9 @@ checkLengthName('city' , 3 )
 checkAllValidation()
 
 document.getElementById('emailadress').addEventListener('keyup',() =>{   
-    let email = `${emailadress.value}`
-    let userinfo = users.find(user => user.emailadress === email)
+    let email = `${emailadress.value}`.toLowerCase()
+    //let userinfo = users.find(user => user.emailadress === email)
+    let userinfo =  users.find(user => user.emailadress === email)
     if(userinfo == null){
         return true
     }
@@ -53,7 +54,7 @@ String.prototype.capitalize = function() {
 let users = []
 document.getElementById('register_btn').addEventListener('click', (e) =>{
     e.preventDefault()
-        let userdata = new User(`${firstname.value.capitalize()}`,`${lastname.value.capitalize()}`,`${emailadress.value}`,`${phone.value}`,`${adressline.value.capitalize()}`,`${zipcode.value}`,`${city.value.capitalize()}`)
+        let userdata = new User(`${firstname.value.capitalize()}`,`${lastname.value.capitalize()}`,`${emailadress.value}`.toLowerCase(),`${phone.value}`,`${adressline.value.capitalize()}`,`${zipcode.value}`,`${city.value.capitalize()}`)
         users.push(userdata)
             document.querySelector('#validatedUsers').innerHTML += `    <div class="flip" id="flip_${userdata.id}" >${userdata.firstname}` + ' ' + `${userdata.lastname}</div>
             <div class="panel" id="panel_${userdata.id}">
