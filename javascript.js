@@ -85,21 +85,15 @@ document.getElementById('register_btn').addEventListener('click', (e) =>{
                         </div>                     
                     </div>
                 </div>      
-            </div>  
-        
-         
-            `   
+            </div>`   
+            
             // <button id="delete_btn" class="delete" type="button">Delete</button> 
             //Denna knapp använder sig av JQuery för att ta bort element men jag lyckades aldrig få den att ta bort hela objektet utan den tog bara bort själva PanelDelen förutom om ja la den utanför så att den syntes hela tiden. 
             //Knappen skulle skapas dynamiskt tillsammmans med resten av objektet.
-                 
-            
-            
-                clearInputs() 
-                clearEmail()
-                checkAllValidation()
-
-
+                
+            clearInputs() 
+            clearEmail()
+            checkAllValidation()
 })
 
 

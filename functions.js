@@ -6,11 +6,9 @@ let adresslineval = false;
 let zipcodeval = false;
 let cityval = false;
 
-    String.prototype.capitalize = function() {
-        return this.charAt(0).toUpperCase() + this.slice(1);
-    }
- 
- 
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
 
 export function checkLengthName(id , min = 2){
     document.getElementById(id).addEventListener('keyup', (e) => {
@@ -139,9 +137,6 @@ export function containOnlyNumbersForPhonenumber(id , min = 9, max = 10){
         }
     })
 }
-
-
-
 
 export function checkAllValidation(){
 
